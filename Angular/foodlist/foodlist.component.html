@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Food</h1>
+
+  <table class="table table-striped" style="margin-top: 30px;">
+    <thead>
+      <tr>
+        <th>food_Type</th>
+        <th>Quantity</th>
+        <th>price</th>
+        <th>food_Description</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let food of foods">
+        <td>{{food.food_Type}}</td>
+        <td>{{food.Quantity}}</td>
+        <td>{{food.price}}</td>
+        <td>{{food.food_Description}}</td>
+        
+        <td>
+          <button (click)="onDetails(food)" class="btn btn-success"><i class="glyphicon glyphicon-info-sign"></i></button>
+          <button (click)="onDelete(food)" class="btn btn-danger" style="margin-left: 10px"><i class="glyphicon glyphicon-trash"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

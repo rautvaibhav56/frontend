@@ -1,0 +1,40 @@
+<div class="container">
+  <h1>Add Food</h1>
+
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="">food_Type</label>
+        <input [(ngModel)]="food_Type" type="text" class="form-control">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="">Quantity</label>
+        <input [(ngModel)]="Quantity" type="number" class="form-control">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="">price</label>
+        <input [(ngModel)]="price" type="number" class="form-control">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for=""> food_Description</label>
+        <input [(ngModel)]="food_Description" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <button (click)="onAdd()" class="btn btn-success">Add</button>
+      <button (click)="onCancel()" class="btn btn-danger" style="margin-left: 10px">Cancel</button>
+    </div>
+  </div>
+</div>
